@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.nicolasbolt.contacts.DocsController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <content>
+        <GridPane vgap="10" hgap="10" fx:id="saveDialog">
+            <Label text="Current Version: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <Label text="1.0.0" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Github Link to Documentation: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <Hyperlink text="https://github.com/nicolasbolt/contact-manager" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#handleLinkClick"/>
+        </GridPane>
+    </content>
+
+</DialogPane>
